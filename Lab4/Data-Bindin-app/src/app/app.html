@@ -1,0 +1,12 @@
+<!--When image is clicked twice, call onDoubleClick-->
+<img (dblclick)="onDoubleClick()" src="https://upload.wikimedia.org/wikipedia/commons/3/34/Red_star.svg"
+height="42" width="42">
+<!--Hidden is set to value of "hide", hides the phrase -->
+<br>
+<h2 [hidden]="hide">Look at the Star.</h2>
+<br>
+<!--calls onClickButton-->
+<button (click)="onClickButton()">Press Me!</button>
+<p>The number of times the button has been pressed is: {{count}}</p>
+<hr>
+<app-list-component></app-list-component>

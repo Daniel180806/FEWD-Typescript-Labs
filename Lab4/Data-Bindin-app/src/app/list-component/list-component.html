@@ -1,0 +1,19 @@
+<!--Generated component-->
+<p>list-component works!</p>
+
+<!--<ul>
+    <li *ngFor="let president of presidents">{{president}}</li>
+</ul>
+
+<ol>
+    @for(president of presidents; track president){
+        <li>{{president}}</li>
+    }
+</ol>--> 
+
+<!--Unordered list for president name and term-->
+<ul>
+    @for(p of presidents; track presidents){
+        <li>{{p.name + " " + p.term}}</li>
+    }
+</ul>
