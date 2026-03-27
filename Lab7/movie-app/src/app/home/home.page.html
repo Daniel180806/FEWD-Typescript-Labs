@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Movie App
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <!--Initialising a for loop for each movie-->
+  @for(movie of movies;track movie){
+  <ion-card>
+    <!-- Data binding to json file-->
+    <img alt="Poster of Movies" src={{movie.Poster}} />
+    <ion-card-header>
+      <ion-card-title>{{movie.Title}}</ion-card-title>
+      <ion-card-subtitle>{{movie.Year}}</ion-card-subtitle>
+    </ion-card-header>
+
+    <!--<ion-card-content>
+      Here's a small text description for the card content. Nothing more, nothing less.
+    </ion-card-content>-->
+  </ion-card>
+  <!-- Experimenting:
+  <ion-toggle>Default Toggle</ion-toggle><br /><br />
+<ion-toggle [checked]="true">Checked Toggle</ion-toggle><br /><br />
+<ion-toggle [disabled]="true">Disabled Toggle</ion-toggle><br /><br />
+<ion-toggle [checked]="true" [disabled]="true">Disabled Checked Toggle</ion-toggle>-->
+  }
+</ion-content>
